@@ -8,7 +8,7 @@
 
   Works with Express 3.0.x
 
-    npm install git://github.com/RGBboy/express-authenticate.git
+    npm install express-authenticate
 
 
 ## Usage
@@ -23,7 +23,7 @@
   app.use(express.cookieParser('miyahamiyahimiyahemiyahoho'));
   app.use(express.session({ cookie: { maxAge: 60000 }}));
 
-  app.use(authenticate());
+  app.use(authenticate(UserModel));
 ```
 
 ## Requires
